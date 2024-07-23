@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Carta, forbice e sasso</title>
+</head>
+
+<body onload="setZero()">
+    <div class="contenitore" id="contenitore-buttons">
+        <div class="contenitore-buttons">
+            <h1 class="titolo">Scegli la modalità di gioco:</h1>
+            <div id="modoGiocoButtons-div">
+                <button type="button" class="modoGiocoButton" id="PlayerVsPCButton">Player vs PC</button>
+                <button type="button" class="modoGiocoButton" id="PCvsPCButton">PC vs PC</button>
+            </div>
+        </div>
+    </div>
+    <div class="gioco" id="gioco-div">
+        <div class="contenitore">
+            <div class="sub-contenitore">
+                <div class="sub-contenitore">
+                    <h1 id="titolo">Carta Forbice Sasso</h1>
+                </div>
+                <div class="buttons" id="buttons">
+                    <button type="button" class="cfsButton" value="Carta">🤚</button>
+                    <button type="button" class="cfsButton" value="Forbice">✌</button>
+                    <button type="button" class="cfsButton" value="Sasso">✊</button>
+                </div>
+
+                <div class="risultatoContenitore">
+                    <div id="punteggiContenitore">
+                        <div id="punteggioPlayer">Player:</div>
+                        <div id="punteggi-player">0</div>
+                        <div id="punteggioPc">PC:</div>
+                        <div id="punteggi-pc">0</div>
+                    </div>
+                    <div id="contenitore-mani">
+                        <div id="mani-div">
+                            <div id="mani"></div>
+                        </div>
+                        <div id="risultato"></div>
+                    </div>
+                    <div id="new-game-button-div">
+                        <button type="button" id="nuovoGioco">Nuovo gioco</button>
+                    </div>
+                </div>
+
+                <div id="opzioni">
+                    <button type="button" id="cambiaModalita">Cambiare modalità</button>
+                    <button type="button" id="resetButton">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

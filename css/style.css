@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+:root {
+    --dark: #1c1c1c;
+    --dark2: #222;
+    --white: white;
+    --rose: #f8a0e5;
+    --gray: #b8b8b8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: var(--dark);
+    text-align: center;
+}
+
+.contenitore-buttons {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titolo {
+    font-size: 2rem;
+}
+
+.modoGiocoButton {
+    font-family: 'Press Start 2P', sans-serif;
+    height: 3.9rem;
+    width: 19.9rem;
+    padding: 1rem 1rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border-radius: 24px;
+    margin-bottom: 10px;
+}
+
+.modoGiocoButton:hover {
+    background-color: #a7fbd4;
+    border-width: 4px;
+    border-color: var(--rose);
+}
+
+.modoGiocoButton:active {
+    background-color: #6ca389;
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    transition: all 0.3s ease;
+}
+
+#modoGiocoButtons-div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titolo {
+    padding-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: var(--white);
+    font-size: 1.6rem;
+}
+
+#gioco-div {
+    display: none;
+}
+
+.contenitore {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    background-color: var(--dark);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sub-contenitore {
+    height: 94vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#buttons {
+    display: flex;
+}
+
+.cfsButton {
+    height: 6.25rem;
+    width: 6.25rem;
+    font-size: 48px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-right: 1.6rem;
+}
+
+.cfsButton:hover {
+    background-color: #a7fbd4;
+    border-width: 4px;
+    border-color: var(--rose);
+}
+
+.cfsButton:active {
+    background-color: #6ca389;
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    transition: all 0.3s ease;
+}
+
+#new-game-button-div {
+    margin: 20px auto 0px;
+}
+
+.risultatoContenitore {
+    font-size: 2rem;
+    text-align: center;
+    margin: 40px auto 30px;
+}
+
+#mani-div {
+    height: 70px;
+    width: 243px;
+    font-size: 48px;
+    border-radius: 30px;
+    padding: 0px;
+    margin: 20px auto;
+    color: var(--white);
+}
+
+#punteggiContenitore {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#punteggioPlayer {
+    margin-right: 10px;
+}
+
+#contenitore-mani {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#risultato {
+    height: 32px;
+    font-size: 1.4rem;
+}
+
+#nuovoGioco {
+    font-family: 'Press Start 2P', sans-serif;
+    height: 58px;
+    background-color: var(--gray);
+    color: var(--dark2);
+    font-size: 1.8rem;
+    padding: 0 2rem;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-bottom: -1rem;
+}
+
+#nuovoGioco:hover {
+    background-color: #3ad972;
+    color: var(--white);
+    border-width: 4px;
+    border-color: #d16fbb;
+    transition: all 0.3s ease;
+}
+
+#nuovoGioco:hover:after {
+    background-color: var(--gray);
+    border-radius: 30px;
+    border: 2px solid var(--dark2);
+}
+
+#nuovoGioco:active {
+    background-color: #ba4646;
+    border-width: 4px;
+    border-color: f2a1e0;
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    transition: all 0.3s ease;
+}
+
+#cambiaModalita {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    background-color: var(--dark);
+    color: var(--gray);
+    cursor: pointer;
+}
+
+#cambiaModalita:hover {
+    color: var(--white);
+    border-width: 4px;
+    border-color: var(--rose);
+    transition: all 0.3s ease;
+}
+
+#cambiaModalita:active {
+    color: var(--gray);
+    transform: translate(0px, 6px);
+    -webkit-transform: translate(0px, 6px);
+}
+
+#resetButton {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--dark);
+    color: #770707;
+    cursor: pointer;
+}
+
+#resetButton:hover {
+    color: #ff3030;
+    border-width: 4px;
+    border-color: var(--rose);
+    transition: all 0.3s ease;
+}
+
+#resetButton:active {
+    color: var(--gray);
+    transform: translate(0px, 6px);
+    -webkit-transform: translate(0px, 6px);
+}
+
+#opzioni {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+}
